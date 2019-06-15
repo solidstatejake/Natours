@@ -69,11 +69,63 @@ body {
   font-size: 60px;
   font-weight: 400;
   letter-spacing: 35px;
+
+  /*animation-name: moveInLeft;*/
+  /*animation-duration: 3s;*/
+  /*animation-timing-function: ease-in-out;*/
+  animation: moveInLeft 3s ease-in-out;
 }
+
 
 .heading-primary-sub {
   display: block;
   font-size: 20px;
   font-weight: 300;
   letter-spacing: 17.4px;
+
+  /*animation-name: moveInRight;*/
+  /*animation-duration: 3s;*/
+  /*animation-timing-function: ease-in-out;*/
+  animation: moveInRight 3s ease-in-out;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  25% {
+    color: black;
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  25% {
+    color: black;
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform:translate(0);
+  }
+
 }

@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing page for natours",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./sass/main.scss ./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solidstatejake/Natours.git"
+  },
+  "author": "Jacob Berg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solidstatejake/Natours/issues"
+  },
+  "homepage": "https://github.com/solidstatejake/Natours#readme",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

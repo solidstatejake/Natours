@@ -8,7 +8,7 @@
                                      $light-green-translucent,
                                      $dark-green-translucent
                      ),
-                     url("../../img/hero.jpg") top;
+                     url("../img/hero.jpg") top;
     clip-path:       polygon(0 0, 100% 0, 100% 75vh, 0 100%);
 
     &__logo-box {

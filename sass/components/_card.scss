@@ -3,7 +3,7 @@
     perspective:      100rem;
     -moz-perspective: 100rem;
     position:         relative;
-    height: 50rem;
+    height:           50rem;
 
     &__side {
         height:              50rem;
@@ -11,7 +11,6 @@
         top:                 0;
         left:                0;
         width:               100%;
-
         backface-visibility: hidden;
         border-radius:       1rem;
         overflow:            hidden; //make sure that border still rounded after image is placed on top.
@@ -23,11 +22,18 @@
         }
 
         &--back {
-            background-color: green;
-            transform:        rotateY(180deg);
+            transform: rotateY(180deg);
 
             &-1 {
                 background-image: linear-gradient(to right bottom, $light-orange, $dark-orange);
+            }
+
+            &-2 {
+                background-image: linear-gradient(to right bottom, $light-green, $dark-green);
+            }
+
+            &-3 {
+                background-image: linear-gradient(to right bottom, $light-blue, $dark-blue);
             }
         }
     }
@@ -54,49 +60,101 @@
         }
 
         &--2 {
-            background-image: url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $light-green, $dark-green),
+                              url(../img/nat-6.jpg);
         }
 
         &--3 {
-            background-image: url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $light-blue, $dark-blue),
+                              url(../img/nat-7.jpg);
         }
     }
 
     &__heading {
-        width: 50%;
-        min-width: 50%;
-        font-size: 2.8rem;
-        font-weight: 300;
+        font-size:      2.8rem;
+        font-weight:    300;
         text-transform: uppercase;
-        text-align: right;
-        color: $white;
-        position: absolute;
-        top: 14rem;
-        right: 1rem;
+        text-align:     right;
+        color:          $white;
+        position:       absolute;
+        top:            14rem;
+        right:          1rem;
+
+        &-1 {
+            width:     50%;
+            min-width: 50%;
+        }
+
+        &-2 {
+            width:     60%;
+            min-width: 60%;
+        }
+
+        &-3 {
+        }
     }
 
+    span {
+        height: 10rem;
+    }
     &__heading--offset {
-        background-image: linear-gradient(to right bottom, rgba($light-orange, 0.8), rgba($dark-orange, 0.8));
+
+        &-1 {
+            background-image: linear-gradient(to right bottom, rgba($light-orange, 0.8), rgba($dark-orange, 0.8));
+        }
+
+        &-2 {
+            background-image: linear-gradient(to right bottom, rgba($light-green, 0.8), rgba($dark-green, 0.8));
+        }
+
+        &-3 {
+            background-image: linear-gradient(to right bottom, rgba($light-blue, 0.8), rgba($dark-blue, 0.8));
+        }
     }
 
     &__details {
         padding: 3rem;
         ul {
             list-style: none;
-            width: 80%;
-            margin: 0 auto;
+            width:      80%;
+            margin:     0 auto;
 
             li {
                 text-align: center;
-                font-size: 1.5rem;
-                padding: 1rem;
+                font-size:  1.5rem;
+                padding:    1rem;
                 &:not(:last-child) {
                     border-bottom: 1px solid $light-grey-2;
                 }
             }
 
-
         }
     }
 
+    //BACK SIDE STYLING
+
+    &__cta {
+        position:   absolute;
+        top:        50%;
+        left:       50%;
+        transform:  translate(-50%, -50%);
+        width:      90%;
+        text-align: center;
+    }
+
+    &__price-box {
+        text-align:    center;
+        color:         $white;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only {
+        font-size:      1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value {
+        font-size:   6rem;
+        font-weight: 100;
+    }
 }

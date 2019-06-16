@@ -9,18 +9,13 @@
         border-radius:   10rem;
         transition:      all 0.2s;
         position:        relative;
-        font-style:      $default-font-size;
-        animation:       moveInBottom $header-animation-time ease-in-out;
+        font-size:      $default-font-size;
     }
 
     &:hover {
         transform:  translateY(-.3rem);
         box-shadow: 0 .7rem 0 rgba($black, 0.5);
-
-        &::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity:   0;
-        }
+        
     }
 
     &:active {
@@ -37,6 +32,11 @@
         }
     }
 
+    &--green {
+        background-color: $light-green;
+        color: $white;
+    }
+
     &::after {
         content:       "";
         display:       inline-block;
@@ -51,6 +51,9 @@
         animation:     fadeButtonIn $header-animation-time ease-in-out;
     }
 
+    &--animate {
+        animation:       moveInBottom $header-animation-time ease-in-out;
+    }
 }
 
 .btn-text {
@@ -77,4 +80,5 @@
         transform:  translateY(-1px);
         box-shadow: none;
     }
+
 }

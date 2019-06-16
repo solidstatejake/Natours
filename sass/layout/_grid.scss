@@ -3,7 +3,6 @@
 
 .row {
     max-width:        $grid-width;
-    background-color: $grid-element-background;
     margin:           0 auto;
     // Apply margin-bottom to all children of .row EXCEPT last-child.
     &:not(:last-child) {
@@ -15,11 +14,11 @@
     // This selector selects all elements in the DOM with a class that
     // starts with (note the '^' before the equals sign) 'col-'
     [class^='col-']{
-        background-color: orangered;
         float:            left;
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
         }
+
     }
 
     .col-1-of-2 {

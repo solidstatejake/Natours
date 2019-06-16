@@ -1,0 +1,63 @@
+@keyframes moveInLeft {
+    0% {
+        opacity:   0;
+        transform: translateX(-10rem);
+    }
+
+    25% {
+        color: $black;
+    }
+
+    100% {
+        opacity:   1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveInRight {
+    0% {
+        opacity:   0;
+        transform: translateX(10rem);
+    }
+
+    25% {
+        color: $black;
+    }
+
+    100% {
+        opacity:   1;
+        transform: translate(0);
+    }
+
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity:          0;
+        background-color: $black;
+        color:            $white;
+        transform:        translateY(10rem);
+    }
+
+    60% {
+        background-color: $black;
+        color:            $white;
+    }
+
+    100% {
+        opacity:   1;
+        transform: translate(0);
+    }
+
+}
+
+@keyframes fadeButtonIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}

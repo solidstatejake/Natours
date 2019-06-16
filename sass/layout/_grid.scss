@@ -1,0 +1,47 @@
+@import '../abstracts/variables';
+@import '../abstracts/mixins';
+
+.row {
+    max-width:        $grid-width;
+    margin:           0 auto;
+    // Apply margin-bottom to all children of .row EXCEPT last-child.
+    &:not(:last-child) {
+        margin-bottom: $gutter-vertical;
+    }
+
+    @include clearfix;
+
+    // This selector selects all elements in the DOM with a class that
+    // starts with (note the '^' before the equals sign) 'col-'
+    [class^='col-']{
+        float:            left;
+        &:not(:last-child) {
+            margin-right: $gutter-horizontal;
+        }
+
+    }
+
+    .col-1-of-2 {
+        width: $col-1-of-2-width;
+    }
+
+    .col-1-of-3 {
+        width: $col-1-of-3-width;
+    }
+
+    .col-2-of-3 {
+        width: $col-2-of-3-width;
+    }
+
+    .col-1-of-4 {
+        width: $col-1-of-4-width;
+    }
+
+    .col-2-of-4 {
+        width: $col-2-of-4-width;
+    }
+
+    .col-3-of-4 {
+        width: $col-3-of-4-width;
+    }
+}

@@ -13,7 +13,7 @@
         background-color: $color__white;
         border:           none;
         border-bottom:    3px solid transparent;
-        width:            80%;
+        width:            90%;
         display:          block;
 
         &:focus {
@@ -37,15 +37,66 @@
         font-weight: 700;
         margin-left: 2rem;
         margin-top:  .7rem;
-        display: block;
+        display:     block;
         transition:  all .3s;
     }
 
     &__input:placeholder-shown + &__label {
-        position: absolute;
+        position:   absolute;
         opacity:    0;
         visibility: hidden;
-        transform: translateY(-4rem);
+        transform:  translateY(-4rem);
     }
 
+    &__radio {
+        width:   49%;
+        display: inline-block;
+
+        &--input {
+            visibility: hidden;
+        }
+
+        &--label {
+            position:     relative;
+            font-size:    $font__size--default;
+            cursor:       pointer;
+            padding-left: 3.5rem;
+            //padding-bottom: 1rem;
+        }
+
+        &--button {
+            display:       inline-block;
+            position:      absolute;
+            top:           -1rem;
+            left:          0;
+            height:        3rem;
+            width:         3rem;
+            border:        5px solid $color__green--light;
+            border-radius: $border__radius--max;
+
+            &::after {
+                content:          "";
+                height:           3rem;
+                width:            3rem;
+                display:          block;
+                border-radius:    $border__radius--max;
+                position:         absolute;
+                top:              50%;
+                left:             50%;
+                transform:        translate(-50%, -50%);
+                background-color: $color__green--light;
+                opacity:          0;
+                transition:       opacity .3s;
+            }
+        }
+
+        &--input:checked ~ &--label &--button:after {
+            opacity: 1;
+        }
+    }
+
+    button {
+        margin-top: 5rem;
+        margin-left: 10rem;
+    }
 }

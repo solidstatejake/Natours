@@ -5,8 +5,8 @@
     background-size:   cover;
     background:        linear-gradient(
                                        to right bottom,
-                                       $light-green-translucent,
-                                       $dark-green-translucent
+                                       $color__green--light-translucent,
+                                       $color__green--dark-translucent
                        ),
                        url("../img/hero.jpg") top;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);

@@ -2,12 +2,12 @@
 @import '../abstracts/mixins';
 
 .row {
-    max-width: $grid-width;
+    max-width: $grid__width;
     margin:    0 auto;
 
     // Apply margin-bottom to all children of .row EXCEPT last-child.
     &:not(:last-child) {
-        margin-bottom: $gutter-vertical;
+        margin-bottom: $grid__gutter--vertical;
     }
 
     @include clearfix;
@@ -18,31 +18,31 @@
         float: left;
 
         &:not(:last-child) {
-            margin-right: $gutter-horizontal;
+            margin-right: $grid__gutter--horizontal;
         }
     }
 
     .col-1-of-2 {
-        width: $col-1-of-2-width;
+        width: $grid__col-1-of-2--width;
     }
 
     .col-1-of-3 {
-        width: $col-1-of-3-width;
+        width: $grid__col-1-of-3--width;
     }
 
     .col-2-of-3 {
-        width: $col-2-of-3-width;
+        width: $grid__col-2-of-3--width;
     }
 
     .col-1-of-4 {
-        width: $col-1-of-4-width;
+        width: $grid__col-1-of-4--width;
     }
 
     .col-2-of-4 {
-        width: $col-2-of-4-width;
+        width: $grid__col-2-of-4--width;
     }
 
     .col-3-of-4 {
-        width: $col-3-of-4-width;
+        width: $grid__col-3-of-4--width;
     }
 }

@@ -1,12 +1,12 @@
 .story {
     width:            75%;
     margin:           0 auto;
-    box-shadow:       0 3rem 6rem rgba($black, .1);
-    background-color: rgba($white, 0.5);
-    border-radius:    3px;
+    box-shadow:       0 3rem 6rem rgba($color__black, .1);
+    background-color: rgba($color__white, 0.5);
+    border-radius:    $border__radius--small;
     padding:          6rem;
     padding-left:     9rem;
-    font-size:        $default-font-size;
+    font-size:        $font__size--default;
     transform:        skewX(-12deg);
 
     &__shape {
@@ -37,7 +37,7 @@
         top:            50%;
         left:           50%;
         transform:      translate(-50%, 10%);
-        color:          $white;
+        color:          $color__white;
         text-transform: uppercase;
         font-size:      1.7rem;
         text-align:     center;

@@ -1,16 +1,16 @@
 .feature-box {
-    background-color: rgba($white, .8);
+    background-color: rgba($color__white, .8);
     font-size:        1.5rem;
     padding:          2.5rem;
     text-align:       center;
-    border-radius:    3px;
-    box-shadow:       0 1.5rem 4rem rgba($black, .15);
+    border-radius:    $border-_radius--small;
+    box-shadow:       0 1.5rem 4rem rgba($color__black, .15);
     transition: transform 0.2s;
 
     &__icon {
         font-size: 6rem;
         margin-bottom: 0.5rem;
-        background-image: linear-gradient(to right , $light-green, $dark-green);
+        background-image: linear-gradient(to right , $color__green--light, $color__green--dark);
         //make so background image is clipped to be exactly the size of the text. Thus, if the
         //text is not transparent,then we will not see the background image; in the case, the
         //linear gradient.

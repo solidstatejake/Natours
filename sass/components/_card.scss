@@ -12,28 +12,28 @@
         left:                0;
         width:               100%;
         backface-visibility: hidden;
-        border-radius:       1rem;
+        border-radius:       $border__radius--medium;
         overflow:            hidden; //make sure that border still rounded after image is placed on top.
-        box-shadow:          1.4rem 1.5rem 0 rgba($black, 0.15);
+        box-shadow:          1.4rem 1.5rem 0 rgba($color__black, 0.15);
         transition:          all 0.8s ease;
 
         &--front {
-            background-color: $white;
+            background-color: $color__white;
         }
 
         &--back {
             transform: rotateY(180deg);
 
             &-1 {
-                background-image: linear-gradient(to right bottom, $light-orange, $dark-orange);
+                background-image: linear-gradient(to right bottom, $color__orange--light, $color__orange--dark);
             }
 
             &-2 {
-                background-image: linear-gradient(to right bottom, $light-green, $dark-green);
+                background-image: linear-gradient(to right bottom, $color__green--light, $color__green--dark);
             }
 
             &-3 {
-                background-image: linear-gradient(to right bottom, $light-blue, $dark-blue);
+                background-image: linear-gradient(to right bottom, $color__blue--light, $color__blue--dark);
             }
         }
     }
@@ -55,17 +55,17 @@
         clip-path:             polygon(0 0, 100% 0, 100% 85%, 0 100%);
 
         &--1 {
-            background-image: linear-gradient(to right bottom, $light-orange, $dark-orange),
+            background-image: linear-gradient(to right bottom, $color__orange--light, $color__orange--dark),
                               url(../img/nat-5.jpg);
         }
 
         &--2 {
-            background-image: linear-gradient(to right bottom, $light-green, $dark-green),
+            background-image: linear-gradient(to right bottom, $color__green--light, $color__green--dark),
                               url(../img/nat-6.jpg);
         }
 
         &--3 {
-            background-image: linear-gradient(to right bottom, $light-blue, $dark-blue),
+            background-image: linear-gradient(to right bottom, $color__blue--light, $color__blue--dark),
                               url(../img/nat-7.jpg);
         }
     }
@@ -75,7 +75,7 @@
         font-weight:    300;
         text-transform: uppercase;
         text-align:     right;
-        color:          $white;
+        color:          $color__white;
         position:       absolute;
         top:            14rem;
         right:          1rem;
@@ -104,15 +104,15 @@
     &__heading--offset {
 
         &-1 {
-            background-image: linear-gradient(to right bottom, rgba($light-orange, 0.8), rgba($dark-orange, 0.8));
+            background-image: linear-gradient(to right bottom, rgba($color__orange--light, 0.8), rgba($color__orange--dark, 0.8));
         }
 
         &-2 {
-            background-image: linear-gradient(to right bottom, rgba($light-green, 0.8), rgba($dark-green, 0.8));
+            background-image: linear-gradient(to right bottom, rgba($color__green--light, 0.8), rgba($color__green--dark, 0.8));
         }
 
         &-3 {
-            background-image: linear-gradient(to right bottom, rgba($light-blue, 0.8), rgba($dark-blue, 0.8));
+            background-image: linear-gradient(to right bottom, rgba($color__blue--light, 0.8), rgba($color__blue--dark, 0.8));
         }
     }
 
@@ -130,7 +130,7 @@
                 padding:    1rem;
 
                 &:not(:last-child) {
-                    border-bottom: 1px solid $light-grey-2;
+                    border-bottom: 1px solid $color__grey--light-2;
                 }
             }
         }
@@ -149,7 +149,7 @@
 
     &__price-box {
         text-align:    center;
-        color:         $white;
+        color:         $color__white;
         margin-bottom: 8rem;
     }
 

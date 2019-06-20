@@ -5,7 +5,7 @@
     }
 
     25% {
-        color: $black;
+        color: $color__black;
     }
 
     100% {
@@ -21,7 +21,7 @@
     }
 
     25% {
-        color: $black;
+        color: $color__black;
     }
 
     100% {
@@ -34,14 +34,14 @@
 @keyframes moveInBottom {
     0% {
         opacity:          0;
-        background-color: $black;
-        color:            $white;
+        background-color: $color__black;
+        color:            $color__white;
         transform:        translateY(10rem);
     }
 
     60% {
-        background-color: $black;
-        color:            $white;
+        background-color: $color__black;
+        color:            $color__white;
     }
 
     100% {

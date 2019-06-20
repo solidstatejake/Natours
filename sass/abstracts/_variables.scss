@@ -2,32 +2,34 @@
 $fa-font-path: '../webfonts';
 
 /* Universal Project colors */
-$color__black: #000;
-$color__white: #FFF;
-$color__grey: #777;
+$color__black:         #000;
+$color__white:         #FFF;
+$color__grey:          #777;
 $color__grey--light-1: #F7F7F7;
 $color__grey--light-2: #EEEEEE;
 $color__grey--dark:    #999999;
+$color__grey--dark-2:  #333333;
 
-$color__green--light: #7ED56F;
+
+$color__green--light:             #7ED56F;
 $color__green--light-translucent: rgba(40, 180, 131, 0.6);
-$color__green--medium: #55C57A;
-$color__green--dark: #28B485;
-$color__green--dark-translucent: rgba(126, 213, 111, 0.6);
+$color__green--medium:            #55C57A;
+$color__green--dark:              #28B485;
+$color__green--dark-translucent:  rgba(126, 213, 111, 0.6);
 
 //Orange card colors
-$color__orange--light: #FFB900;
-$color__orange--dark: #FF7730;
+$color__orange--light:   #FFB900;
+$color__orange--dark:    #FF7730;
 
 //Blue card colors
 $color__blue--light: #2998FF;
-$color__blue--dark: #4643FA;
+$color__blue--dark:  #4643FA;
 
 //end colors
 
 /* Header button colors */
 $button__background--color: $color__white;
-$button__text--color: $color__grey;
+$button__text--color:       $color__grey;
 
 /* Border variables */
 $border__radius--small:  3px;
@@ -41,10 +43,10 @@ $font__size--default: 1.6rem;
 $header__animation--time: 3.5s;
 
 /* _grid.scss Variables*/
-$grid__element--color: #EEE;
-$grid__width: 114rem;
-$grid__gutter--vertical: 8rem;
-$grid__gutter--horizontal: 6rem;
+$grid__element--color:      #EEE;
+$grid__width:               114rem;
+$grid__gutter--vertical:    8rem;
+$grid__gutter--horizontal:  6rem;
 
 $grid__col-1-of-2--width: calc((100% - #{$grid__gutter--horizontal}) / 2);
 $grid__col-1-of-3--width: calc((100% - (2 * #{$grid__gutter--horizontal})) / 3);

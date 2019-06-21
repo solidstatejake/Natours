@@ -4517,23 +4517,20 @@ body {
     overflow: hidden; }
 
 .btn, .btn:link, .btn:visited {
+  box-shadow: 2px 5px 0 #000;
   text-transform: uppercase;
   text-decoration: none;
   padding: 1.5rem 4rem;
+  cursor: pointer;
   display: inline-block;
   border-radius: 100rem;
   transition: all 0.2s;
   position: relative;
   font-size: 1.6rem;
   border: none; }
-
-.btn:hover {
-  transform: translateY(-0.3rem);
-  box-shadow: 0 0.7rem 0 rgba(0, 0, 0, 0.5); }
-
-.btn:active {
-  transform: translateY(-0.1rem);
-  box-shadow: none; }
+  .btn:active, .btn:link:active, .btn:visited:active {
+    box-shadow: none;
+    transform: translate(2px, 5px); }
 
 .btn--white {
   background-color: #FFF;
@@ -4933,7 +4930,7 @@ body {
 .navigation__button {
   background-color: #FFF;
   border-radius: 100rem;
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 5px 0 #000;
   cursor: pointer;
   display: flex;
   height: 7rem;
@@ -4941,9 +4938,13 @@ body {
   position: fixed;
   right: 6rem;
   text-align: center;
+  transition: all .3s;
   top: 6rem;
   width: 7rem;
   z-index: 2000; }
+  .navigation__button:active {
+    box-shadow: none;
+    transform: translate(2px, 5px); }
 
 .navigation__background {
   background-image: radial-gradient(#7ED56F, #28B485);

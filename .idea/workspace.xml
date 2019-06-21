@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4819f8e2-7af3-4a15-b625-f94a0f62dbd9" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/abstracts/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/abstracts/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/base/_animations.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/base/_animations.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sass/components/_button.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/components/_button.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sass/layout/_navigation.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/layout/_navigation.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -29,11 +28,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_navigation.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_navigation.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/layout/_navigation.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="131" selection-start-line="131" selection-end-line="131" />
+            <state relative-caret-position="315">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
             </state>
           </provider>
         </entry>
@@ -65,11 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_button.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/components/_button.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-227">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+            <state relative-caret-position="270">
+              <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
             </state>
           </provider>
         </entry>
@@ -110,7 +109,6 @@
         <option value="$PROJECT_DIR$/sass/components/_feature-box.scss" />
         <option value="$PROJECT_DIR$/sass/components/_story.scss" />
         <option value="$PROJECT_DIR$/sass/pages/_home.scss" />
-        <option value="$PROJECT_DIR$/sass/components/_button.scss" />
         <option value="$PROJECT_DIR$/sass/components/_form.scss" />
         <option value="$PROJECT_DIR$/sass/layout/_footer.scss" />
         <option value="$PROJECT_DIR$/sass/main.scss" />
@@ -119,6 +117,7 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/sass/abstracts/_variables.scss" />
         <option value="$PROJECT_DIR$/sass/layout/_navigation.scss" />
+        <option value="$PROJECT_DIR$/sass/components/_button.scss" />
       </list>
     </option>
   </component>
@@ -233,15 +232,15 @@
       <workItem from="1560566845547" duration="13464000" />
       <workItem from="1560647300332" duration="15148000" />
       <workItem from="1560721092976" duration="7022000" />
-      <workItem from="1561073636563" duration="8675000" />
+      <workItem from="1561073636563" duration="9816000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="68008000" />
+    <option name="totallyTimeSpent" value="69149000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="885" y="0" width="795" height="1050" extended-state="6" />
+    <frame x="1040" y="0" width="640" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0" />
@@ -580,13 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/components/_button.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-227">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/abstracts/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3">
@@ -617,8 +609,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/sass/layout/_navigation.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
+        <state relative-caret-position="315">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sass/components/_button.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="44" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
         </state>
       </provider>
     </entry>

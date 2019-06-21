@@ -3,28 +3,24 @@
     &,
     &:link,
     &:visited {
+        box-shadow: 2px 5px 0 $color__black;
         text-transform:  uppercase;
         text-decoration: none;
         padding:         1.5rem 4rem;
+        cursor: pointer;
         display:         inline-block;
         border-radius:   $border__radius--max;
         transition:      all 0.2s;
         position:        relative;
         font-size:       $font__size--default;
-
         border: none;
+
+        &:active {
+            box-shadow: none;
+            transform:   translate(2px, 5px);
+        }
     }
 
-    &:hover {
-        transform:  translateY(-.3rem);
-        box-shadow: 0 .7rem 0 rgba($color__black, 0.5);
-        
-    }
-
-    &:active {
-        transform:  translateY(-.1rem);
-        box-shadow: none;
-    }
 
     &--white {
         background-color: $button__background--color;

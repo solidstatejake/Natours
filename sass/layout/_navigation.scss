@@ -7,7 +7,7 @@
     &__button {
         background-color: $color__white;
         border-radius:    $border__radius--max;
-        box-shadow:       0 1rem 3rem rgba($color__black, 0.5);
+        box-shadow:       2px 5px 0 $color__black;
         cursor:           pointer;
         display:          flex;
         height:           7rem;
@@ -15,9 +15,15 @@
         position:         fixed;
         right:            6rem;
         text-align:       center;
+        transition:       all .3s;
         top:              6rem;
         width:            7rem;
         z-index:          2000;
+
+        &:active {
+            box-shadow: none;
+            transform: translate(2px, 5px);
+        }
     }
 
     &__background {

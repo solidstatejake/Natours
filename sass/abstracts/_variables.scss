@@ -54,3 +54,7 @@ $grid__col-2-of-3--width: calc(100% - #{$grid__col-1-of-3--width} - #{$grid__gut
 $grid__col-1-of-4--width: calc((100% - (3 * #{$grid__gutter--horizontal})) / 4);
 $grid__col-2-of-4--width: calc(100% - 2 * #{$grid__col-1-of-4--width} - 2 * #{$grid__gutter--horizontal});
 $grid__col-3-of-4--width: calc(100% - #{$grid__col-1-of-4--width} - #{$grid__gutter--horizontal});
+
+/* Navigation */
+$menu-line-spacing: -0.8rem;
+$menu-X-spacing:    -1rem;

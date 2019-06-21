@@ -61,3 +61,49 @@
     }
 
 }
+
+
+@keyframes easeOutBounce {
+    0% {
+        transform: scale(1) translateX(0%);
+
+    }
+
+    12% {
+        transform: scale(0.89) translateX(-10.89%);
+    }
+
+    24% {
+        transform: scale(0.56) translateX(-43.56%);
+    }
+
+    36% {
+        transform: scale(0.02)  translateX(-98.01%);
+    }
+
+    54% {
+        transform: scale(0.25) translateX(-75.02%);
+    }
+
+    74% {
+        transform: scale(0.02) translateX(-98.37%);
+    }
+
+    82% {
+        transform: scale(0.06) translateX(-93.75%);
+    }
+
+    92% {
+        transform: scale(0.01) translateX(-99.34%);
+    }
+
+    96% {
+        transform: scale(0.02) translateX(-98.46%);
+    }
+
+    100% {
+        transform: scale(0) translateX(-100%);
+    }
+
+
+}
